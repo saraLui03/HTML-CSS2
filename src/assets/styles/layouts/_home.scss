@@ -72,7 +72,7 @@ body {
 .header-image{
   position: relative; 
   width: 100%;
-  height: 500px; 
+  height: 600px; 
   
   img{
   width: 100%;
@@ -80,10 +80,10 @@ body {
   object-fit: cover; 
   
   }
-  
+
   .title{
   position: absolute; 
-  top: 50%; 
+  top: 40%; 
   left: 50%;
   transform: translate(-50%, -50%); 
   color: white;
@@ -91,11 +91,22 @@ body {
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
   margin: 0;
+  font-size: 60px;
+  line-height: 100%;
+  font-family: variables.$font-family-serif;
   }
+  
+  b{
+    
+    color:variables.$secundary-color;
+  }
+ 
+  
+ 
   
   .introduction{
   position: absolute; 
-  top: 70%; 
+  top: 60%; 
   left: 50%;
   transform: translate(-50%, -50%); 
   color: white;
@@ -106,6 +117,60 @@ body {
 }
 
 .location-box{
+  
   display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  
+  .location-elements{
+    width: 600px;
+    
+  
+  }
   
 }
+
+.visitar{
+ 
+    .grid-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    }
+    .card{
+      background: variables.$secundary-color;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      
+      figure{
+        margin: 0;
+
+      img{
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+
+      } 
+      figcaption{
+        text-align: center;
+              color:white;
+
+        
+      };
+      }
+      
+      h3{
+        color:wheat;
+      }
+      p{
+      color:white;
+      }
+    }
+   
+    
+  }
