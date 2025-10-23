@@ -13,7 +13,7 @@ body {
   font-family: variables.$font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-  background-color: variables.$uoc-bg;
+  background-color: variables.$background-color;
   color: variables.$uoc-corporate;
 }
 
@@ -30,8 +30,7 @@ body {
 
 .uoc-logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+
   margin-bottom: 1.5rem;
   max-width: 200px;
   height: auto;
@@ -56,4 +55,57 @@ body {
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
+}
+
+.nav-bar{
+  display: flex;
+  max-width: 1500px;
+  justify-content: space-between;
+  align-content: space-between;
+  ul{
+    li{
+      display: flex;
+    }
+  }
+}
+
+.header-image{
+  position: relative; 
+  width: 100%;
+  height: 500px; 
+  
+  img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  
+  }
+  
+  .title{
+  position: absolute; 
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+  margin: 0;
+  }
+  
+  .introduction{
+  position: absolute; 
+  top: 70%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: white;
+  background-color: variables.$secundary-color ;
+  padding: 10px;
+  
+  }
+}
+
+.location-box{
+  display: flex;
+  
 }
