@@ -13,7 +13,6 @@ body {
   font-family: variables.$font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-  background-color: variables.$background-color;
   color: variables.$uoc-corporate;
 }
 
@@ -183,22 +182,7 @@ body {
       p{
       color:white;
       }
-      button {
-        width: 100%;
-        background:#4B1018;
-        color: white;
-        padding: 15px 30px;
-        border: none;
-        border-radius: 50px; /* Totalmente redondeado */
-        font-size: 18px;
-        font-weight: bold;
-        cursor: pointer;
-        box-shadow: 0 4px 20px rgba(255, 107, 107, 0.4);
-        transition: all 0.3s ease;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-
-      }
+      
     }
    
     
@@ -221,4 +205,23 @@ body {
     
   }
   }
- 
+
+  
+  .location-link{
+    color:variables.$button_color;
+  }
+
+  .newsletter-section{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+
+    // Newsletter form
+    .newsletter-form{
+      background-color: variables.$background-color;
+      
+      padding:50px;
+    
+    }
+    
+  }
