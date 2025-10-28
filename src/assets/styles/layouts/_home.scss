@@ -15,6 +15,24 @@ body {
   line-height: 24px;
   color: variables.$secundary-color;
 
+  //Tablet version
+  @media (min-width: 768px) {
+    padding: 2rem;
+    
+    &__title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  //Movile version
+  @media (min-width: 768px) {
+    padding: 2rem;
+
+    &__title {
+      font-size: 1.5rem;
+    }
+  }
+  
 
 }
 
@@ -128,7 +146,7 @@ body {
 
 } &__elements{
   
-  display: flex;
+    display: flex;
     flex-direction: column;
     flex-basis: 100%;
 
@@ -145,7 +163,7 @@ body {
 }}
 
 
-
+// Apartado : Conocer "Hong Kong"
 .visitar{
   width: 100%;
   margin-left: auto;
@@ -160,13 +178,13 @@ body {
     margin-left: auto;
   }
 
-  .grid{
+  .grid{ // Apartado :Conocer "Hong Kong" y  Eventos y puntos culturales
     &__card{
       display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-        &--element{
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+        &--element{   
           /*background: variables.$secundary-color;*/
       background: brown;
       border-radius: 10px;
@@ -211,7 +229,8 @@ body {
   }
 
 
-  
+  // Apartado : ¿Dónde comer?
+
   .restaurantes{
     width: 80%;
     margin-right:  auto;
@@ -233,23 +252,16 @@ body {
   }
   }
 
-  
+  // Newsletter part with form
   .newsletter{
-    &__form{
-    background-color: variables.$background-color;
-      border-radius: 10px;
-    &--group{
-
-    }
-    &--label{
-        margin-bottom: 150px;
-
-    }}
     &__section{
-     width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    }}
+      width: 98%;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: variables.$background-color;
+      border-radius: 10px;
+      padding:50px;
+    }
+}
 
-  
- .newsletter{&__form{&--group{}&--label{}}&__section{}}
+

@@ -103,11 +103,10 @@
             <div>
               <h3>Gastronomía</h3>
               <p>
-                La gastronomía de Hong Kong es una vibrante fusión de tradición
-                cantonesa e influencia internacional. Desde los clásicos dim sum
-                y wonton noodles hasta la innovadora cocina de autor, representa
-                la esencia de la ciudad: donde lo ancestral se encuentra con lo
-                moderno.
+                Hong Kong es famosa por su comida cantonesa y su enorme variedad
+                de platos callejeros. Algunos ejemplos típicos son el dim sum,
+                los wonton noodles, el roast duck (pato asado) y el milk tea (té
+                con leche al estilo hongkonés). 
               </p>
             </div>
           </div>
@@ -129,6 +128,26 @@
                 china e influencia occidental. Donde rascacielos ultramodernos
                 conviven con templos centenarios, y las festividades ancestrales
                 se mezclan con una escena artística contemporánea vibrante.
+              </p>
+            </div>
+          </div>
+          <div class="grid__card--element">
+            <figure>
+              <img
+                src="src/assets/images/comercio_HK.jpg"
+                alt="entrada_districto_HK"
+              />
+              <figcaption>
+                "Kowloon, distrito continental de Hong Kong"
+              </figcaption>
+            </figure>
+            <div>
+              <h3>Economía y comercio</h3>
+              <p>
+                Hong Kong es una de las regiones más dinámicas económicamente
+                del planeta. Es un centro financiero y portuario internacional,
+                con impuestos bajos, gran libertad comercial y una intensa
+                actividad turística y de negocios.
               </p>
             </div>
           </div>
@@ -154,7 +173,7 @@
         </div>
       </div>
       <div class="restaurantes">
-        <h2>¿Donde comer?</h2>
+        <h2>¿Dónde comer?</h2>
         <div class="flexbox__restaurants">
           <img
             src="src/assets/images/restaurant1.jpg"
@@ -186,10 +205,7 @@
             <h3>Restaurante 2 : Luk Yu Tea House</h3>
             <p>
               <i class="fa-solid fa-location-dot"></i> Location:
-              <a
-                class="location__link"
-                href="https://maps.google.com/?q=9-11+Fuk+Wing+Street,+Sham+Shui+Po,+Hong+Kong"
-              >
+              <a class="location__link" href="#">
                 24-26 Stanley Street, Central</a
               >
             </p>
@@ -216,7 +232,7 @@
             <h3>Restaurante 3: Mak's Noodle</h3>
             <p>
               <i class="fa-solid fa-location-dot"></i> Location:
-              <a class="location-link" href="#">
+              <a class="location__link" href="#">
                 77 Wellington Street, Central</a
               >
             </p>
@@ -355,8 +371,11 @@
         Recibe guías exclusivas, secretos locales y ofertas especiales en tu
         email
       </p>
-      <include src="./views/form.html"></include>
       <!--Formulario newsletter-->
+      <include
+        class="newsletter__section--form"
+        src="./views/form.html"
+      ></include>
     </section>
 
     <include src="./views/footer.html"></include>
