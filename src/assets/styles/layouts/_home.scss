@@ -15,24 +15,6 @@ body {
   line-height: 24px;
   color: variables.$secundary-color;
 
-  //Tablet version
-  @media (min-width: 768px) {
-    padding: 2rem;
-    
-    &__title {
-      font-size: 1.5rem;
-    }
-  }
-  
-  //Movile version
-  @media (min-width: 768px) {
-    padding: 2rem;
-
-    &__title {
-      font-size: 1.5rem;
-    }
-  }
-  
 
 }
 
@@ -99,6 +81,11 @@ body {
   height: 100%;
   object-fit: cover; 
   
+  //Mobile version (420px)
+  @media (max-width: variables.$mqMinWidth) { 
+     height: 700px;
+
+  }
   }
 
   .title{
@@ -114,7 +101,9 @@ body {
   font-size: 60px;
   line-height: 100%;
   font-family: variables.$font-family-serif;
-  }
+   
+
+}
   
   b{
     
@@ -131,18 +120,59 @@ body {
   color: white;
   background-color: variables.$secundary-color ;
   padding: 10px;
+
+  //Tablet version (768px)
+  @media (max-width: variables.$tabletMaxWidth) {
+    top: 75%; 
+    width: 80%;
+  }
+  
+  //Mobile version (420px)
+  @media (max-width: variables.$mqMinWidth) { 
+    top: 85%; 
+    width: 90%;
+
+  }
   
   }
 }
 
 .location{
   &__box{
-      display: flex;
+  display: flex;
   justify-content: space-around;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 150px;
   margin-right: 150px;
+  gap:50px;
+
+  & img {
+    margin: 20px;
+  }
+  
+  //Tablet version (768px)
+  @media (max-width: variables.$tabletMaxWidth) {
+    flex-direction: column;
+    margin-left: 90px;
+    margin-right: 90px; 
+    gap:50px;
+   
+  }
+  
+  
+  //Mobile version (420px)
+  @media (max-width: variables.$mqMinWidth) { 
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 150px;
+    gap:10px;
+
+
+
+
+  }
 
 } &__elements{
   
@@ -157,6 +187,7 @@ body {
     img {
         width: 100%;
     }
+
 }&__link{
     color:variables.$link_color;
 
@@ -236,16 +267,66 @@ body {
     margin-right:  auto;
     margin-left: auto;
 
+    
     .flexbox{
-  &__restaurants{
+      &__restaurants{
+        
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex: auto;
+        justify-content: space-around;
+        gap:20px;
 
-    width: 100%;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-around;
-    gap:20px;
+        flex-direction: column;
+        justify-items: center;
+
+         @media (max-width: variables.$tabletMaxWidth) {
+                width: 90%;
+              }
+              @media (max-width: variables.$mqMinWidth) {
+                width: 100%;
+              }
+
+
+
+        &--content {
+            flex-basis: 50%;
+       
+        }
+
+        &--img {
+            
+            width: 100%;
+
+            img {
+              width: 100%;
+
+              @media (max-width: variables.$tabletMaxWidth) {
+                width: 90%;
+              }
+              @media (max-width: variables.$mqMinWidth) {
+                width: 100%;
+              }
+            }
+
+        }
+        
+
+        // // Tablet version
+        // @media (max-width: variables.$tabletMaxWidth) {
+        //     flex-direction: row;
+        //     &:nth-child(odd) {
+        //     flex-direction: row-reverse;
+        //   }
+        // }
+        // //Mobile version
+        // @media (max-width: variables.$mqMinWidth) {
+        
+  
+        
+        // }
     
   }
     
