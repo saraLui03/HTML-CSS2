@@ -1,5 +1,6 @@
 @use "../variables";
 
+
 * {
   box-sizing: border-box;
 }
@@ -173,8 +174,7 @@ body {
 
 
   }
-
-} &__elements{
+  &__elements{
   
     display: flex;
     flex-direction: column;
@@ -192,6 +192,7 @@ body {
     color:variables.$link_color;
 
 }}
+} 
 
 
 // Apartado : Conocer "Hong Kong"
