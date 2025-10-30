@@ -1,6 +1,5 @@
 @use "../variables";
-@use "./_grid-card.scss";
-
+@use "./grid-card";
 
 * {
   box-sizing: border-box;
@@ -96,7 +95,6 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 3rem;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 0;
@@ -198,7 +196,6 @@ h2 {
     margin-left: auto;
   }
 
-
   figure {
     margin: 0;
     img {
@@ -282,8 +279,6 @@ h2 {
     border-radius: 10px;
     padding: 50px;
 
-    &--label {
-    }
     &--input {
       width: 20%;
       border-radius: 5px;
@@ -300,8 +295,8 @@ h2 {
   }
 }
 
+//botón "Suscribirme"
 .submit-btn {
-  //botón "Suscribirme"
   padding: 10px;
   margin-top: 15px;
   color: variables.$text-color;
